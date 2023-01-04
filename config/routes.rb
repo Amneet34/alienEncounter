@@ -9,4 +9,9 @@ patch '/reports/:id', to: 'reports#update'
 
 post '/locations', to: 'locations#create'
 
+get '/articles', to: 'articles#index'
+get '/articles/:id', to:'articles#show'
+post '/articles/:id/comments', to: 'articles#create_comment'
+delete '/comments/:id', to: 'articles#delete_comment'
+
 end
